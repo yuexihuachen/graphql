@@ -1,6 +1,10 @@
+import "./Auth.css"
+
 function EventsPage() {
   return (
-   <h1>The Events Page</h1>
+   <div className="events-control">
+    <button className="pure-button">Create Event</button>
+   </div>
   );
 }
 

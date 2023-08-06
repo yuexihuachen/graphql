@@ -1,0 +1,13 @@
+.pure-form {
+    display: flex;
+    justify-content: center;
+}
+
+.pure-button:first-of-type {
+    margin-right: 18px;
+}
+
+.pure-button {
+    background-color: #5101d1;
+}
+
