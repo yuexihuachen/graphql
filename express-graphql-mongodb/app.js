@@ -15,7 +15,9 @@ const port = process.env.PORT || '3000';
 
 async function initServer() {
     const server = await apolloServer()
-    const middlewares = [bodyParser.json(),cookieParser(),authenticate,expressMiddleware(server)]
+    const middlewares = [bodyParser.json(),cookieParser(),authenticate,expressMiddleware(server, {
+      context: async ({ req, res }) => ({ req, res }),
+    })]
     if (IS_DEV) {
         middlewares.unshift(cors(),logger('dev'))
     }

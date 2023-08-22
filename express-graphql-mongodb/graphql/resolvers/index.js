@@ -1,6 +1,6 @@
 const rootResolver = {
     Query: {
-        hello: () => 'world'
+        hello: () => 123
     },
 
 }
