@@ -1,6 +1,7 @@
+import { buildSchema } from "graphql";
 
-module.exports = `#graphql
+module.exports = buildSchema(`
 type Query {
   hello: String
 }
-`;
+`);
