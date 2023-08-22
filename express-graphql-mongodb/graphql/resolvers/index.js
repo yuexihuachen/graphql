@@ -1,7 +1,8 @@
 const rootResolver = {
     Query: {
-        hello: () => 'world',
+        hello: () => 'world'
     },
+
 }
 
 module.exports = rootResolver
