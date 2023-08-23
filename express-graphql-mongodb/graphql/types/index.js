@@ -1,7 +1,9 @@
 /** Schema Definition Language (SDL) 字符串
  * @description 
- * Scalar
- * Object - This includes the three special root operation types: Query, Mutation, and Subscription.
+ * GraphQL schema Supported types
+ * Scalar - Int, Float, String, Boolean, ID(uuid)
+ * Object - includes special root operation types:
+ *  - Query, Mutation, and Subscription.
  * Input
  * Enum
  * Union

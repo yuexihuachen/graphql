@@ -1,3 +1,6 @@
+import { PubSub } from 'graphql-subscriptions';
+
+const pubsub = new PubSub();
 /**
  * @description 解析器
  */
@@ -9,5 +12,5 @@ export const resolvers = {
         hello,
         resolved,
         books
-    },
+    }
 }
