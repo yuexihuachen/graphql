@@ -1,8 +1,13 @@
-const rootResolver = {
+/**
+ * @description 解析器
+ */
+import { books } from "./books"
+import { resolved, hello } from "./product"
+
+export const resolvers = {
     Query: {
-        hello: () => 123
+        hello,
+        resolved,
+        books
     },
-
 }
-
-module.exports = rootResolver

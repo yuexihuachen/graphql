@@ -1,0 +1,12 @@
+type Event {
+    id: ID!
+    name: String
+    age: Int
+}
+
+type Query {
+  books: Int
+  event: [Event!]!
+  uuid: ID
+}
+

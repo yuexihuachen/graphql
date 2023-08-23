@@ -1,8 +1,9 @@
 import { ApolloServer } from '@apollo/server';
 import nodeEnv from 'kiwi-environment';
 
-import typeDefs from "../graphql/schema/index";
-import resolvers from "../graphql/resolvers/index";
+// import typeDefs from "../graphql/schema/index";
+// import resolvers from "../graphql/resolvers/index";
+import { schema } from "../graphql/index"
 import { formatError } from '../lib/formatError';
 import { myPlugin, responsePlugin } from '../apolloPlugins/customPlugin';
 import { correlationId } from '../apolloPlugins/correlationId';
@@ -22,8 +23,7 @@ const startApolloServer = async (options) => {
 
 export async function apolloServer() {
     return await startApolloServer({
-        typeDefs,
-        resolvers,
+        schema,
         formatError,
         plugins: [
             responsePlugin,

@@ -12,6 +12,8 @@
   "dependencies": {
     "@apollo/gateway": "^2.4.12",
     "@apollo/server": "^4.9.1",
+    "@graphql-tools/merge": "^9.0.0",
+    "@graphql-tools/resolvers-composition": "^7.0.0",
     "body-parser": "^1.20.2",
     "cookie-parser": "~1.4.4",
     "cookie-session": "^2.0.0",
@@ -35,6 +37,9 @@
     "@babel/core": "^7.22.10",
     "@babel/preset-env": "^7.22.10",
     "@babel/register": "^7.22.5",
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-tools/mock": "^9.0.0",
+    "@graphql-tools/schema": "^10.0.0",
     "@guozishu/kiwi-logger": "^1.0.0"
   }
 }
