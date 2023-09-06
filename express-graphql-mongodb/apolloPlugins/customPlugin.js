@@ -1,6 +1,7 @@
 export const myPlugin = {
-    // Fires whenever a GraphQL request is received from a client.
-    async requestDidStart({ request: { query } }) {
+    // client发送请求触发函数
+    async requestDidStart(context) {
+        console.log(context)
         //console.log('Request started! Query:\n' + requestContext.request.query);
         console.log('Request started! Query:\n');
         //console.log(query)
@@ -21,7 +22,7 @@ export const myPlugin = {
 };
 
 export const responsePlugin = {
-    requestDidStart: () => ({
+    requestDidStart: (context) => ({
       willSendResponse: ({ response }) => {
         response.data = response.data || null
       }

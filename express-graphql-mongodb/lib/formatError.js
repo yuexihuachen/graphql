@@ -16,7 +16,8 @@ const errorByCode = {
     INTROSPECTION_DISABLED: 'INTROSPECTION_DISABLED'
 }
 
-export const formatError = (error) => {
+export const formatError = (formattedError, otherError) => {
+    const error = formattedError
     if (error?.message && IS_PROD) {
         error.message = error.message
     }

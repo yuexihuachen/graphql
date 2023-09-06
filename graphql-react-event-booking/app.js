@@ -27,13 +27,13 @@ app.use("/graphql", graphqlHTTP({
     graphiql: true
 }))
 
-const uri = `mongodb+srv://${process.env.MONGO_USER}:${
-    process.env.MONGO_PASSWORD
-}@clustergraphql.oqtebrr.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
+// const uri = `mongodb+srv://${process.env.MONGO_USER}:${
+//     process.env.MONGO_PASSWORD
+// }@clustergraphql.oqtebrr.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
 
-mongoose.connect(uri)
-.then(() => {
-    app.listen(8000)
-})
-.catch(err => console.log(err))
+// mongoose.connect(uri)
+// .then(() => {
+//     app.listen(8000)
+// })
+// .catch(err => console.log(err))
 

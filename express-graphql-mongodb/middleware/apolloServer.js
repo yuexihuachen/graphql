@@ -22,8 +22,8 @@ const startApolloServer = async (options) => {
 export async function apolloServer() {
     return await startApolloServer({
         schema,
-        formatError,
-        plugins: [
+        formatError,// formatError 钩子函数
+        plugins: [ // 通过自定义插件扩展graphql的功能
             responsePlugin,
             myPlugin,
             correlationId(),
